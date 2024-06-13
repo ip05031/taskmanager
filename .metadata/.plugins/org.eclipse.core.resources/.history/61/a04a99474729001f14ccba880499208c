@@ -1,0 +1,5 @@
+package com.task.dev.config;
+
+public class DataInitializer {
+
+}

@@ -1,0 +1,8 @@
+package com.task.dev.security;
+
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;
+import org.springframework.security.web.access.expression.WebSecurityExpressionRoot;
+
+public class WebSecurityConfig extends WebSecurityConfiguration{
+
+}

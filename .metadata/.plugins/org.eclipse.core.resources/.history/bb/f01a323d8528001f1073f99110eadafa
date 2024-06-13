@@ -1,0 +1,18 @@
+package com.task.dev.service;
+
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.task.dev.repository.EstadoTareaRepository;
+
+import java.util.List;
+
+@Service
+public class EstadoTareaServiceImpl implements EstadoTareaService {
+
+    @Autowired
+    private EstadoTareaRepository estadoTareaRepository;
+
+}

@@ -1,0 +1,19 @@
+package com.task.dev.service;
+
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.task.dev.model.Usuario;
+
+import java.util.List;
+
+@Service
+public class UsuarioServiceImpl implements UsuarioService {
+
+    @Autowired
+    private UsuarioRepository usuarioRepository;
+
+   
+}

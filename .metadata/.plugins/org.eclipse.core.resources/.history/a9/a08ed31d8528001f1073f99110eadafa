@@ -1,0 +1,14 @@
+package com.task.dev.service;
+
+package com.example.demo.service;
+
+import com.example.demo.model.EstadoTarea;
+
+import java.util.List;
+
+public interface EstadoTareaService {
+    List<EstadoTarea> findAll();
+    EstadoTarea findById(Long id);
+    EstadoTarea save(EstadoTarea estadoTarea);
+    void deleteById(Long id);
+}
