@@ -1,0 +1,22 @@
+package com.task.dev.security;
+
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import com.task.dev.repository.UsuarioRepository;
+
+@Service
+public class UserDetailServiceImpl implements UserDetailsService{
+
+	@Autowired
+	private UsuarioRepository usuarioRepository;
+	
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+	
+		return null;
+	}
+	
+
+}

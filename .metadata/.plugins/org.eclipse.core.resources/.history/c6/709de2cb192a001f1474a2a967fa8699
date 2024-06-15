@@ -1,0 +1,5 @@
+package com.task.dev.security;
+
+public class TokenUtils {
+	private final static String ACCESS_TOKEN_SECRET = "";
+}

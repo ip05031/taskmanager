@@ -29,15 +29,15 @@ public class DataInitializer implements CommandLineRunner {
         Usuario usuario1 = new Usuario();
         usuario1.setNombre("Usuario1");
         usuario1.setUsuario("usuario1");
-        usuario1.setContraseña("contraseña1");
-        usuario1.setEmail("usuario1@example.com");
+        usuario1.setContraseña("$2a$10$UPHcwFe3NJ2tY/N15Ankv.cm69n3d/ruk0yWCL5NWE0GHHpDU8mYq");
+        usuario1.setEmail("ip05031@gmail.com");
         usuario1.setEstado("activo");
         usuarioRepository.save(usuario1);
 
         Usuario usuario2 = new Usuario();
         usuario2.setNombre("Usuario2");
         usuario2.setUsuario("usuario2");
-        usuario2.setContraseña("contraseña2");
+        usuario2.setContraseña("password");
         usuario2.setEmail("usuario2@example.com");
         usuario2.setEstado("activo");
         usuarioRepository.save(usuario2);
@@ -45,7 +45,7 @@ public class DataInitializer implements CommandLineRunner {
         Usuario usuario3 = new Usuario();
         usuario3.setNombre("Usuario3");
         usuario3.setUsuario("usuario3");
-        usuario3.setContraseña("contraseña3");
+        usuario3.setContraseña("password");
         usuario3.setEmail("usuario3@example.com");
         usuario3.setEstado("activo");
         usuarioRepository.save(usuario3);

@@ -1,0 +1,8 @@
+package com.task.dev.security;
+
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+public class UserDetailServiceImpl implements UserDetailsService{
+	
+
+}

@@ -1,0 +1,31 @@
+package com.task.dev.security;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter{
+	
+	 @Override
+	public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
+			throws AuthenticationException {
+		 
+		 AuthCredentials authCredentials = new AuthCredentials();
+		 
+		 try {
+			authCredentials = new ObjectMapper().readValue(request.getHeader(), AuthCredentials.class);
+		} catch (IOException e) {
+			// TODO: handle exception
+		}
+		 
+		 
+		// TODO Auto-generated method stub
+		return super.attemptAuthentication(request, response);
+	}
+
+}

@@ -1,5 +1,0 @@
-package com.task.dev.repository;
-
-public interface UsuarioRepository {
-
-}
